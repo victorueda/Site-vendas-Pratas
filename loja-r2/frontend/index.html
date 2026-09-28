@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>R2 Gold and Silver — Semijoias em Ouro e Prata</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="nav-left">
+      <a href="#colecao" class="navlink">Coleção</a>
+      <a href="#sobre" class="navlink">Sobre</a>
+    </div>
+    <a href="#" class="logo-mark"><img src="assets/LogoR2.jpeg" alt="R2 Gold and Silver"></a>
+    <div class="nav-right">
+      <a href="#contato" class="navlink">Contato</a>
+      <button class="icon-btn" id="cartBtn" aria-label="Abrir carrinho">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h2l2.4 12.2a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 2-1.6L21 8H6"/><circle cx="9" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">Ouro 18k · Prata 925</div>
+    <h1>Duas ligas.<br>Uma <em>só</em> assinatura.</h1>
+    <p class="lead">Peças de semijoia em ouro e prata desenhadas para durar — do dia a dia à ocasião que pede brilho. Cada linha da coleção nasce do encontro entre os dois metais que dão nome à R2.</p>
+    <div class="hero-ctas">
+      <a href="#colecao" class="btn btn-solid">Ver coleção</a>
+      <a href="#sobre" class="btn btn-ghost">Nossa história</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <svg viewBox="0 0 200 200" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="80" cy="80" r="46" stroke="#A67C3D" stroke-width="2"/>
+      <circle cx="120" cy="120" r="46" stroke="#8E8E8B" stroke-width="2"/>
+    </svg>
+  </div>
+</section>
+
+<section class="section" id="colecao">
+  <div class="section-head">
+    <div>
+      <div class="eyebrow" style="margin-bottom:10px;">A coleção</div>
+      <h2>Peças em destaque</h2>
+    </div>
+    <p>Anéis, colares, brincos e pulseiras banhados a ouro 18k ou em prata 925, pensados para compor — sozinhos ou empilhados.</p>
+  </div>
+
+  <div class="filters" id="filters">
+    <button class="filter-btn active" data-filter="all">Todas</button>
+    <button class="filter-btn" data-filter="Anéis">Anéis</button>
+    <button class="filter-btn" data-filter="Colares">Colares</button>
+    <button class="filter-btn" data-filter="Brincos">Brincos</button>
+    <button class="filter-btn" data-filter="Pulseiras">Pulseiras</button>
+    <span style="width:1px;background:var(--line);margin:0 6px;"></span>
+    <button class="filter-btn" data-filter="Ouro 18k">Ouro</button>
+    <button class="filter-btn" data-filter="Prata 925">Prata</button>
+  </div>
+
+  <div class="grid" id="productGrid"></div>
+</section>
+
+<section class="about" id="sobre">
+  <div class="about-inner">
+    <div class="about-visual"><img src="assets/LogoR2.jpeg" alt="R2 Gold and Silver"></div>
+    <div>
+      <div class="eyebrow" style="margin-bottom:10px;">Sobre a R2</div>
+      <h2>Onde o ouro encontra a prata</h2>
+      <p>A R2 Gold and Silver nasceu da vontade de oferecer semijoias que acompanham o ritmo real de quem as usa — resistentes à água e ao dia a dia, sem abrir mão do acabamento fino que uma joia pede.</p>
+      <p>Trabalhamos com duas ligas nobres, ouro 18k e prata 925, para que cada cliente escolha o tom que combina com sua pele e com o momento. O nome R2 é essa dualidade: dois metais, uma só marca.</p>
+      <div class="about-stats">
+        <div><div class="n">925</div><div class="l">Prata legítima</div></div>
+        <div><div class="n">18k</div><div class="l">Banho de ouro</div></div>
+        <div><div class="n">100%</div><div class="l">Feito à mão</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="newsletter">
+  <div class="duo-line center"><span></span><span></span></div>
+  <div id="newsletterBox">
+    <h2>Fique por dentro dos lançamentos</h2>
+    <p>Novas peças, edições limitadas e acesso antecipado a promoções.</p>
+    <form
+      class="nl-form"
+      id="nlForm"
+      action="https://b22b1ecb.sibforms.com/serve/MUIFAM4B93DrktAKt7mYJx4mS3pF_TA-a85hIcFy6qvb7HsgWBALnkH7tDiVFxNO37KmSkQj47yGx7gED3zJYtmNxQEcAMzQMfgt5GrAn4JbZZDB1cZdm3u-olIBUjExu6pWI5MHr7NjE6xBEPULum_idVO91IzpMUfkLWboeBDsNpc80UfVV8c1bga-UPoDN3aLk4lcccqmWYURNg=="
+      method="POST">
+
+      <input
+          type="email"
+          name="EMAIL"
+          id="nlEmail"
+          placeholder="Seu melhor e-mail"
+          required>
+
+      <input type="hidden" name="locale" value="pt">
+      <input type="text" name="email_address_check" style="display:none">
+
+      <button type="submit" id="nlSubmit">
+          Inscrever
+      </button>
+    </form>
+  </div>
+</section>
+
+<footer id="contato">
+  <div class="foot-inner">
+    <div>
+      <img src="assets/logo.png" alt="R2 Gold and Silver">
+      <p>Semijoias em ouro 18k e prata 925. Peças atemporais para compor seu dia a dia.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Loja</h4>
+      <a href="#colecao">Coleção</a>
+      <a href="#sobre">Sobre nós</a>
+      <a href="#">Trocas e devoluções</a>
+    </div>
+    <div class="foot-col">
+      <h4>Atendimento</h4>
+      <a href="https://wa.me/5543988008313" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="mailto:contato@r2goldandsilver.com.br">contato@r2goldandsilver.com.br</a>
+      <a href="#">Perguntas frequentes</a>
+    </div>
+    <div class="foot-col">
+      <h4>Redes</h4>
+      <a href="https://www.instagram.com/reinaldopratas" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="#">Pinterest</a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 R2 Gold and Silver. Todos os direitos reservados.</span>
+    <span>CNPJ 00.000.000/0001-00 · Site em ambiente de demonstração</span>
+  </div>
+</footer>
+
+<!-- CART DRAWER -->
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer">
+  <div class="drawer-head">
+    <h3>Sua sacola</h3>
+    <button class="drawer-close" id="drawerClose">&times;</button>
+  </div>
+  <div class="drawer-items" id="drawerItems"></div>
+  <div class="drawer-foot">
+    <div class="subtotal-row"><span>Subtotal</span><span id="subtotalVal">R$ 0,00</span></div>
+    <button class="btn btn-solid" id="checkoutBtn">Finalizar compra</button>
+  </div>
+</aside>
+
+<!-- CHECKOUT MODAL -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modalContent"></div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
